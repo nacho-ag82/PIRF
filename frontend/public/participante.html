@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Participante - PIRF</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>PIRF - Participante</h1>
+     <nav>
+      <a href="index.html">Inicio</a>
+      <a href="participante.html" id="nav-participante">Participante</a>
+      <a href="admin.html" id="nav-admin">Administración</a>
+      <a href="galeria.html">Galería</a>
+      <a href="estadisticas.html">Estadísticas</a>
+      <a href="duelo.html">Duelo</a>
+      <span id="usuario-nav" style="float:right"></span>
+    </nav>
+    <hr>
+  </header>
+<form id="formFoto" enctype="multipart/form-data">
+  <input type="text" name="titulo" placeholder="Título de la foto" required />
+  <input type="file" name="foto" accept="image/*" required />
+  <button type="submit">Subir Foto</button>
+</form>
+<div id="aviso_plazo"></div>
+  
+  <script src="../src/scripts/participante.js"></script>
+  <script src="../src/scripts/nav.js"></script>
+</body>
+</html>

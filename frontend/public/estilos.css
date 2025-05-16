@@ -1,0 +1,215 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+header nav {
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    font-size: 1.05rem;
+    display: inline-block;
+}
+
+header nav a:hover, header nav a.active {
+    background: #495057;
+    color: #ffd700;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dee2e6;
+    margin: 0 0 1.5rem 0;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Sugerencias de mejora para una apariencia más moderna y consistente */
+
+/* Mejorar la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #343a40;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+nav ul li a:hover {
+    background: #e9ecef;
+}
+
+/* Mejorar formularios */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    max-width: 400px;
+    margin: 2rem auto;
+}
+form input, form button, form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form button {
+    background: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    letter-spacing: 1px;
+}
+form button:hover {
+    background: #495057;
+}
+
+/* Mejorar galería */
+#galeria, #fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#galeria > div, #fotos > div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.15s;
+}
+
+#galeria > div:hover, #fotos > div:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+#galeria img, #fotos img {
+    border-radius: 6px;
+    margin-bottom: 0.7rem;
+    max-width: 100%;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+/* Mensajes */
+#mensaje, #aviso_plazo {
+    color: #c82333;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+ol#top3 {
+    max-width: 400px;
+    margin: 1.5rem auto 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+}
+
+#logout{
+    width: 20px;
+}
+
+button, input[type="submit"] {
+    background: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #495057;
+}
+
+@media (max-width: 900px) {
+    #galeria, #fotos {
+        gap: 1rem;
+    }
+    #galeria > div, #fotos > div {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav a {
+        margin: 0 0.3rem;
+        font-size: 0.98rem;
+        padding: 6px 10px;
+    }
+    form {
+        padding: 1rem;
+        max-width: 98vw;
+    }
+    #galeria > div, #fotos > div {
+        padding: 0.7rem;
+    }
+    ol#top3 {
+        padding: 0.7rem 1rem;
+    }
+}

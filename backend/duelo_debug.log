@@ -1,0 +1,434 @@
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?) AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+)
+RESULT: array (
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 1,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 4,
+    'titulo' => 'foto3',
+  ),
+  1 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+  1 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 7,
+    'titulo' => 'foto2',
+  ),
+  1 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 7,
+    'titulo' => 'foto2',
+  ),
+  1 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+  1 => 
+  array (
+    'id' => 4,
+    'titulo' => 'foto3',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 6,
+    'titulo' => 'foto3',
+  ),
+  1 => 
+  array (
+    'id' => 7,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 7,
+    'titulo' => 'foto2',
+  ),
+  1 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+     AND usuario_id != ?
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 2,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 4,
+    'titulo' => 'foto3',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'titulo' => 'foto4',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
+QUERY: 
+    SELECT id, titulo FROM fotografias
+    WHERE estado = 'admitida'
+    AND id NOT IN (?,?,?,?,?,?)
+    ORDER BY RAND()
+    LIMIT 2
+
+PARAMS: array (
+  0 => 7,
+  1 => 4,
+  2 => 1,
+  3 => 2,
+  4 => 5,
+  5 => 6,
+)
+RESULT: array (
+  0 => 
+  array (
+    'id' => 3,
+    'titulo' => 'foto2',
+  ),
+)
