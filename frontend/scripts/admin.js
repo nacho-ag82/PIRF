@@ -1,4 +1,3 @@
-
 async function cargarFotos() {
   const res = await fetch("../../backend/admin_fotos.php");
   const text = await res.text();
@@ -11,6 +10,11 @@ async function cargarFotos() {
   }
   const div = document.getElementById("fotos");
   div.innerHTML = "";
+
+  if (!Array.isArray(fotos) || fotos.length === 0) {
+    div.innerHTML = "<p>No hay fotos pendientes para admitir o rechazar.</p>";
+    return;
+  }
 
   fotos.forEach(f => {
     const cont = document.createElement("div");
