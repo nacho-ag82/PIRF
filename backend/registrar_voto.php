@@ -16,27 +16,32 @@ if (!estaPermitido('fin_votacion')) {
 
 $fotoGanadora = $_POST['ganadora'] ?? null;
 $fotoPerdedora = $_POST['perdedora'] ?? null;
+$ip = $_SERVER['REMOTE_ADDR'];
 
 if (!$fotoGanadora || !$fotoPerdedora) {
     echo json_encode(["success" => false, "message" => "Faltan datos"]);
     exit;
 }
 
-$ip = $_SERVER['REMOTE_ADDR'];
-$usuario_id = $_SESSION['usuario_id'] ?? null;
+// Verifica si ya existe un voto para esta combinación hoy desde esta IP
+$stmt = $pdo->prepare("
+    SELECT 1 FROM votos
+    WHERE foto_ganadora_id = ? AND foto_perdedora_id = ? AND ip = ? AND DATE(fecha) = CURDATE()
+");
+$stmt->execute([$fotoGanadora, $fotoPerdedora, $ip]);
+if ($stmt->fetch()) {
+    echo json_encode(["success" => false, "message" => "Ya has votado este duelo hoy."]);
+    exit;
+}
 
-// Límite de votos por día
-$configStmt = $pdo->prepare("SELECT lim_votos FROM configuracion");
-$configStmt->execute();
-$limite = (int) $configStmt->fetchColumn();
-
-
-
-// Guardar voto con manejo de errores
+// Inserta el voto
+$stmt = $pdo->prepare("
+    INSERT INTO votos (foto_ganadora_id, foto_perdedora_id, ip, fecha)
+    VALUES (?, ?, ?, NOW())
+");
 try {
-    $stmt = $pdo->prepare("INSERT INTO votos (foto_ganadora_id, foto_perdedora_id, ip, id) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$fotoGanadora, $fotoPerdedora, $ip, $usuario_id]);
-    echo json_encode(["success" => true, "message" => "¡Voto registrado!"]);
-} catch (Exception $e) {
-    echo json_encode(["success" => false, "message" => "Error al registrar voto: " . $e->getMessage()]);
+    $stmt->execute([$fotoGanadora, $fotoPerdedora, $ip]);
+    echo json_encode(["success" => true, "message" => "Voto registrado"]);
+} catch (PDOException $e) {
+    echo json_encode(["success" => false, "message" => "Error al registrar voto"]);
 }

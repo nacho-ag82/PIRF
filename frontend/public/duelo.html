@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Rally Fotográfico</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/duelo.css">
 </head>
 <body>
   <header>
     <h1>PIRF - Duelo</h1>
-     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="participante.html" id="nav-participante">Participante</a>
-      <a href="admin.html" id="nav-admin">Administración</a>
-      <a href="galeria.html">Galería</a>
-      <a href="estadisticas.html">Estadísticas</a>
-      <a href="duelo.html">Duelo</a>
-      <span id="usuario-nav" style="float:right"></span>
-    </nav>
+     <div id="nav-container"></div>
     <hr>
   </header>
   <div id="duelo" style="display: flex; gap: 2rem;"></div>
   <button onclick="cargarDuelo()">Cargar otro duelo</button>
   <div id="aviso_plazo"></div>
   <div id="duelo-error" style="color:red"></div>
-
-  <script src="../src/scripts/duelo.js"></script>
-  <script src="../src/scripts/nav.js"></script>
+  <footer>
+    <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../scripts/duelo.js"></script>
+  <script src="../scripts/nav.js"></script>
 </body>
+
 </html>

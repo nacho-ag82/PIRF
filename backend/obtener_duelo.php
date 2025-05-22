@@ -6,72 +6,83 @@ error_reporting(E_ALL);
 session_start();
 require_once "conexion.php";
 
-$usuario_id = $_SESSION['usuario_id'] ?? null;
-$ip = $_SERVER['REMOTE_ADDR'];
+header('Content-Type: application/json');
 
-// Obtener IDs de fotos ya votadas hoy por el usuario (como ganadora o perdedora)
-if ($usuario_id) {
-    $votosStmt = $pdo->prepare("
-        SELECT foto_ganadora_id, foto_perdedora_id
-        FROM votos
-        WHERE id = ? AND DATE(fecha) = CURDATE()
-    ");
-    $votosStmt->execute([$usuario_id]);
-} else {
+try {
+    $usuario_id = $_SESSION['usuario_id'] ?? null;
+    $ip = $_SERVER['REMOTE_ADDR'];
+
+    // Obtener pares de fotos ya votados hoy por la IP
     $votosStmt = $pdo->prepare("
         SELECT foto_ganadora_id, foto_perdedora_id
         FROM votos
         WHERE ip = ? AND DATE(fecha) = CURDATE()
     ");
     $votosStmt->execute([$ip]);
+    $votos = $votosStmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Construir un set de pares ya usados (sin importar el orden)
+    $duelos_votados = [];
+    foreach ($votos as $v) {
+        $a = (int)$v['foto_ganadora_id'];
+        $b = (int)$v['foto_perdedora_id'];
+        $dueloKey = $a < $b ? "$a-$b" : "$b-$a";
+        $duelos_votados[$dueloKey] = true;
+    }
+
+    // Inicializar $excluir como cadena vacía
+    $excluir = "";
+
+    // Excluir fotos propias si está logueado
+    $params = [];
+    if ($usuario_id) {
+        $excluir .= " AND usuario_id != ?";
+        $params[] = $usuario_id;
+    }
+
+    // Consulta final
+    $query = "
+        SELECT id, titulo FROM fotografias
+        WHERE estado = 'admitida'
+        $excluir
+        ORDER BY RAND()
+        LIMIT 2
+    ";
+
+    $stmt = $pdo->prepare($query);
+    $stmt->execute($params);
+    $fotos_disponibles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Verificar si hay suficientes fotos disponibles
+    if (count($fotos_disponibles) < 2) {
+        echo json_encode(['error' => 'No hay más duelos disponibles para hoy.']);
+        exit;
+    }
+
+    // Seleccionar aleatoriamente dos fotos distintas que no formen un duelo ya mostrado
+    $duelo = null;
+    $maxIntentos = 20;
+    for ($i = 0; $i < $maxIntentos; $i++) {
+        shuffle($fotos_disponibles);
+        $id1 = $fotos_disponibles[0]['id'];
+        $id2 = $fotos_disponibles[1]['id'];
+        if ($id1 == $id2) {
+            continue; // Asegura que los IDs sean diferentes
+        }
+        $key = $id1 < $id2 ? "$id1-$id2" : "$id2-$id1";
+        if (!isset($duelos_votados[$key])) {
+            $duelo = [$id1, $id2];
+            break;
+        }
+    }
+
+        // Devuelve los datos de las dos fotos seleccionadas
+        $stmt = $pdo->prepare("SELECT id FROM fotografias WHERE id IN (?, ?)");
+        $stmt->execute($duelo);
+        $fotos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode(['duelo' => $fotos]);
+    
+} catch (Throwable $e) {
+    echo json_encode(['error' => 'Error interno del servidor.', 'details' => $e->getMessage()]);
 }
-$votadas = [];
-foreach ($votosStmt->fetchAll(PDO::FETCH_ASSOC) as $row) {
-    $votadas[] = $row['foto_ganadora_id'];
-    $votadas[] = $row['foto_perdedora_id'];
-}
-$votadas = array_unique($votadas);
-
-// Construir la cláusula para excluir fotos ya votadas hoy
-$excluir = "";
-$params = [];
-if (!empty($votadas)) {
-    $placeholders = implode(',', array_fill(0, count($votadas), '?'));
-    $excluir = "AND id NOT IN ($placeholders)";
-    $params = array_merge($params, $votadas);
-}
-
-// Excluir fotos propias si está logueado
-if ($usuario_id) {
-    $excluir .= " AND usuario_id != ?";
-    $params[] = $usuario_id;
-}
-
-// Consulta final
-$query = "
-    SELECT id, titulo FROM fotografias
-    WHERE estado = 'admitida'
-    $excluir
-    ORDER BY RAND()
-    LIMIT 2
-";
-
-file_put_contents(__DIR__ . '/duelo_debug.log', "QUERY: $query\nPARAMS: " . var_export($params, true) . "\n", FILE_APPEND);
-
-$stmt = $pdo->prepare($query);
-$stmt->execute($params);
-
-if (!$stmt) {
-    header('Content-Type: application/json');
-    echo json_encode(['success' => false, 'error' => 'Error en la consulta SQL']);
-    exit;
-}
-
-$fotos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-file_put_contents(__DIR__ . '/duelo_debug.log', "RESULT: " . var_export($fotos, true) . "\n", FILE_APPEND);
-
-// Siempre devolver JSON, aunque esté vacío
-if (ob_get_level()) ob_end_clean();
-header('Content-Type: application/json');
-echo json_encode($fotos);
+exit;

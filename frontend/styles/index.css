@@ -1,0 +1,22 @@
+main {
+  text-align: center;
+  padding: 2rem;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+main button {
+  padding: 0.7rem 1.5rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+main button:hover {
+  background: #0056b3;
+}

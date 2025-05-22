@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Administración - PIRF</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/admin.css">
 </head>
 <body>
   <header>
     <h1>PIRF - Administración</h1>
-     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="participante.html" id="nav-participante">Participante</a>
-      <a href="admin.html" id="nav-admin">Administración</a>
-      <a href="galeria.html">Galería</a>
-      <a href="estadisticas.html">Estadísticas</a>
-      <a href="duelo.html">Duelo</a>
-      <span id="usuario-nav" style="float:right"></span>
-    </nav>
+    <div id="nav-container"></div>
     <hr>
   </header>
-  <div id="admin-content">
-    <h2>Panel de Control</h2>
-    <p>Aquí puedes gestionar los duelos, participantes y estadísticas.</p>
-    <!-- Additional admin functionalities can be added here -->
-  </div>
+  <section id="config">
+    <h3>Configuración</h3>
+    <label>Fin subida: <input id="lim_subida" type="datetime-local"></label>
+    <label>Fin votación: <input id="lim_fvoto" type="datetime-local"></label>
+    <label>Límite votos diarios: <input id="lim_votos" type="number"></label>
+    <button onclick="guardarConfig()">Guardar</button>
+  </section>
 
-  <script src="../src/scripts/nav.js"></script>
+  <hr>
+
+  <section id="fotos">
+    <h3>Fotos pendientes</h3>
+    <div id="fotos-list"></div>
+  </section>
+  <footer>
+    <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../scripts/nav.js"></script>
+  <script src="../scripts/admin.js"></script>
 </body>
 </html>

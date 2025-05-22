@@ -1,0 +1,26 @@
+#duelo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#duelo div {
+  text-align: center;
+}
+
+#duelo img {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#duelo img:hover {
+  transform: scale(1.05);
+}
+
+#duelo-error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}

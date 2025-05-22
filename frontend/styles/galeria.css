@@ -1,0 +1,26 @@
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+#galeria div {
+  text-align: center;
+}
+
+#galeria img {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+#galeria img:hover {
+  transform: scale(1.05);
+}
+
+#galeria-error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}

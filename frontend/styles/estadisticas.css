@@ -1,0 +1,10 @@
+#estadisticas {
+  padding: 2rem;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}

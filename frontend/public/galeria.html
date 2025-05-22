@@ -2,27 +2,26 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Galería - PIRF</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Galería de Fotos - PIRF</title>
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/galeria.css">
 </head>
 <body>
   <header>
-    <h1>Galería de Imágenes</h1>
-     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="participante.html" id="nav-participante">Participante</a>
-      <a href="admin.html" id="nav-admin">Administración</a>
-      <a href="galeria.html">Galería</a>
-      <a href="estadisticas.html">Estadísticas</a>
-      <a href="duelo.html">Duelo</a>
-      <span id="usuario-nav" style="float:right"></span>
-    </nav>
+    <h1>Galería de Fotos</h1>
+    <div id="nav-container"></div>
     <hr>
   </header>
-  <div id="galeria" style="display: flex; flex-wrap: wrap; gap: 1rem;"></div>
-  <div id="galeria-error" style="color:red"></div>
-
-  <script src="../src/scripts/galeria.js"></script>
-  <script src="../src/scripts/nav.js"></script>
+  <main>
+    <div id="galeria-error" style="color:red"></div>
+    <div id="galeria" style="display:flex;flex-wrap:wrap;gap:1.5rem"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../scripts/nav.js"></script>
+  <script src="../scripts/galeria.js"></script>
 </body>
+
 </html>

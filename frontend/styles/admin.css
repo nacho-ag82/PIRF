@@ -1,0 +1,97 @@
+/* Sección de configuración */
+#config {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#config h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+#config label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+#config input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#config button {
+  display: block;
+  width: 80%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#config button:hover {
+  background: #0056b3;
+}
+
+/* Fotos pendientes */
+#fotos {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#fotos h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+#fotos div {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+#fotos div:hover {
+  background: #f1f1f1;
+}
+
+#fotos button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#fotos button:hover {
+  background: #218838;
+}
+
+#fotos button.rechazar {
+  background: #dc3545;
+}
+
+#fotos button.rechazar:hover {
+  background: #c82333;
+}

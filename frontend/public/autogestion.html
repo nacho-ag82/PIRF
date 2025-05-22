@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autogestión de Participante - PIRF</title>
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/autogestion.css">
+</head>
+<body>
+  <header>
+    <h1>Autogestión de Participante</h1>
+    <div id="nav-container"></div>
+    <hr>
+  </header>
+  <main>
+    <form id="autogestion-form" style="max-width:400px;margin:auto" autocomplete="on">
+      <label>Nombre:<br>
+        <input type="text" id="nombre" name="nombre" required autocomplete="name">
+      </label><br><br>
+      <label>Email:<br>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </label><br><br>
+      <label>Dirección:<br>
+        <input type="text" id="direccion" name="direccion" autocomplete="street-address" list="direccion-list">
+        <datalist id="direccion-list"></datalist>
+      </label><br><br>
+      <label>Teléfono:<br>
+        <input type="tel" id="telefono" name="telefono" autocomplete="tel" list="telefono-list">
+        <datalist id="telefono-list"></datalist>
+      </label><br><br>
+      <label>Fecha de nacimiento:<br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" autocomplete="bday">
+      </label><br><br>
+      <label>Nueva contraseña:<br>
+        <input type="password" id="password" name="password" placeholder="Dejar en blanco para no cambiar" autocomplete="new-password">
+      </label><br><br>
+      <button type="submit">Guardar cambios</button>
+      <div id="autogestion-msg"></div>
+      <div id="autogestion-error"></div>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../scripts/autogestion.js"></script>
+  <script src="../scripts/nav.js"></script>
+</body>
+</html>

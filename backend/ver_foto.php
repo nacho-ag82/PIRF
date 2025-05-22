@@ -12,7 +12,6 @@ if (!$img) {
     http_response_code(404);
     exit;
 }
-// Opcional: podrías guardar el tipo MIME en la base de datos, aquí asumimos JPEG/PNG
 $finfo = finfo_open(FILEINFO_MIME_TYPE);
 $mime = finfo_buffer($finfo, $img);
 finfo_close($finfo);
