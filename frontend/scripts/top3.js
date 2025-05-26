@@ -31,7 +31,7 @@ async function cargarGaleria() {
   }
 
   const topTitle = document.createElement("h2");
-  topTitle.innerText = "Top 3 fotos más votadas";
+  topTitle.innerText = "";
   container.appendChild(topTitle);
 
   const topDiv = document.createElement("div");
@@ -47,6 +47,7 @@ async function cargarGaleria() {
       <p>Votos: ${foto.votos}</p>
     `;
     topDiv.appendChild(div);
+    document.getElementById("podium").style.display = "flex";
   });
   container.appendChild(topDiv);
 }

@@ -81,4 +81,4 @@ async function votar(ganadora, perdedora) {
   if (data.success) cargarDuelo();
 }
 
-window.onload = cargarDuelo;
+window.onload = cargarDuelo();

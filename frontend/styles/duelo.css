@@ -1,3 +1,4 @@
+
 #duelo {
   display: flex;
   justify-content: center;
@@ -23,4 +24,17 @@
   color: red;
   text-align: center;
   margin-top: 1rem;
+}
+
+button{
+    scale: 1.5;
+    display: block;
+    margin-top: 5%;
+    margin-left: 45%;;
+  padding: 0.5rem 1rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

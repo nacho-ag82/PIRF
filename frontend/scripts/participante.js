@@ -1,4 +1,3 @@
-
 async function comprobarPlazo(clave) {
   const res = await fetch("../../backend/config.php");
   const config = await res.json();
@@ -20,31 +19,76 @@ async function comprobarPlazo(clave) {
 }
 comprobarPlazo("lim_subida");
 
-  document.getElementById("formFoto").addEventListener("submit", async (e) => {
+document.addEventListener("DOMContentLoaded", () => {
+  cargarFotosSubidas();
+
+  const form = document.getElementById("formFoto");
+  form.onsubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-
+    const formData = new FormData(form);
     try {
-      const response = await fetch("../../backend/subir_foto.php", {
+      const res = await fetch("../../backend/subir_foto.php", {
         method: "POST",
-        body: formData
+        body: formData,
       });
-
-      const text = await response.text();
-      let result;
-      try {
-        result = JSON.parse(text);
-      } catch (err) {
-        alert("Error inesperado:\n" + text);
-        return;
+      const data = await res.json();
+      if (data.success) {
+        alert("Foto subida correctamente.");
+        form.reset();
+        cargarFotosSubidas();
+      } else {
+        alert(data.message || "Error al subir la foto.");
       }
-
-      alert(result.message + (result.error ? "\n" + result.error : ""));
-      if (result.success) location.reload();
-    } catch (err) {
-      alert("Error de red o servidor: " + err);
+    } catch (e) {
+      alert("Error de conexión.");
     }
-  });
+  };
+});
 
- 
+async function cargarFotosSubidas() {
+  const container = document.getElementById("mis-fotos");
+  container.innerHTML = "<p>Cargando fotos...</p>";
+
+  try {
+    const res = await fetch("../../backend/mis_fotos.php");
+    const fotos = await res.json();
+
+    if (!Array.isArray(fotos) || fotos.length === 0) {
+      container.innerHTML = "<p>No has subido fotos aún.</p>";
+      return;
+    }
+
+    container.innerHTML = "";
+    fotos.forEach((foto) => {
+      const div = document.createElement("div");
+      div.className = "foto-item";
+      div.innerHTML = `
+        <input type="text" value="${foto.titulo}" onchange="editarTitulo(${foto.id}, this.value)" />
+        <img src="../../backend/ver_foto.php?id=${foto.id}" width="400" />
+        
+      `;
+      container.appendChild(div);
+    });
+  } catch (e) {
+    container.innerHTML = "<p>Error al cargar tus fotos.</p>";
+  }
+}
+
+async function editarTitulo(id, nuevoTitulo) {
+  try {
+    const res = await fetch("../../backend/editar_titulo.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `id=${id}&titulo=${encodeURIComponent(nuevoTitulo)}`,
+    });
+    const data = await res.json();
+    if (!data.success) {
+      alert(data.message || "Error al actualizar el título.");
+    }
+  } catch (e) {
+    alert("Error de conexión.");
+  }
+}
+
+
 

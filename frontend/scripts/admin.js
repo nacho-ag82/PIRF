@@ -94,8 +94,59 @@ async function guardarConfig() {
   }
 }
 
+async function cargarUsuarios() {
+  const container = document.getElementById("lista-usuarios");
+  container.innerHTML = "<p>Cargando usuarios...</p>";
+
+  try {
+    const res = await fetch("../../backend/usuarios.php");
+    const usuarios = await res.json();
+
+    if (!Array.isArray(usuarios) || usuarios.length === 0) {
+      container.innerHTML = "<p>No hay usuarios registrados.</p>";
+      return;
+    }
+
+    container.innerHTML = "";
+    usuarios.forEach(usuario => {
+      const div = document.createElement("div");
+      div.className = "usuario-item";
+      div.innerHTML = `
+        <span>${usuario.nombre} (${usuario.email})</span>
+        <button onclick="eliminarUsuario(${usuario.id})">Eliminar</button>
+      `;
+      container.appendChild(div);
+    });
+  } catch (e) {
+    container.innerHTML = "<p>Error al cargar usuarios.</p>";
+  }
+}
+
+async function eliminarUsuario(id) {
+  if (!confirm("¿Estás seguro de que deseas eliminar este usuario?")) return;
+
+  try {
+    const res = await fetch("../../backend/eliminar_usuario.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `id=${id}`
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Usuario eliminado correctamente.");
+      cargarUsuarios();
+    } else {
+      alert(data.message || "Error al eliminar el usuario.");
+    }
+  } catch (e) {
+    alert("Error de conexión.");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   cargarFotos();
   cargarConfig();
+  cargarUsuarios();
 });
 

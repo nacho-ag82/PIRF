@@ -17,6 +17,7 @@ function logout() {
 
 function cargar_nav() {
   document.getElementById("nav-container").innerHTML = `<nav>
+      <img src="../icons/logo.png" alt="Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
       <a href="index.html">Inicio</a>
       <a href="participante.html" id="nav-participante">Participante</a>
       <a href="admin.html" id="nav-admin">Administración</a>
@@ -45,7 +46,7 @@ function cargar_nav() {
           }
         }
 
-        nav.innerHTML = `<a href='../public/autogestion.html'>👤 ${data.nombre}</a> <a href="#" onclick="logout()"><img id="logout" src="../../icons/logout.png" alt="Logout"/></a>`;
+        nav.innerHTML = `<a href='../public/autogestion.html'>👤 ${data.nombre}</a> <a href="#" onclick="logout()"><img id="logout" src="../icons/logout.png" alt="Logout"/></a>`;
       } else {
 
         nav.innerHTML = `<a href="login.html">Login</a>`;

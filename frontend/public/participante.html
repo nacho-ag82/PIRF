@@ -10,16 +10,20 @@
 </head>
 <body>
   <header>
-    <h1>PIRF - Participante</h1>
      <div id="nav-container"></div>
-    <hr>
   </header>
-<form id="formFoto" enctype="multipart/form-data">
-  <input type="text" name="titulo" placeholder="Título de la foto" required />
-  <input type="file" name="foto" accept="image/*" required />
-  <button type="submit">Subir Foto</button>
-</form>
+  <div class="form-container">
+  <form id="formFoto" enctype="multipart/form-data">
+    <input type="text" name="titulo" placeholder="Título de la foto" required />
+    <input type="file" name="foto" accept="image/*" required />
+    <button type="submit">Subir Foto</button>
+  </form>
+</div>
 <div id="aviso_plazo"></div>
+<section id="fotos-subidas">
+    <h3>Mis Fotos Subidas</h3>
+    <div id="mis-fotos"></div>
+  </section>
   <footer>
     <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
   </footer>

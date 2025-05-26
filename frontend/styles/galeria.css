@@ -1,4 +1,6 @@
 #galeria {
+    margin-left: 10%;
+    width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
