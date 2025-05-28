@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PIRF - Rally Fotográfico</title>
+  <link rel="icon" href="frontend/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="frontend/styles/general.css">
+  <link rel="stylesheet" href="frontend/styles/nav.css">
+  <link rel="stylesheet" href="frontend/styles/index.css">
+</head>
+<body onload="loadData()">
+  <header>
+    <div id="nav-container"></div>
+    <h1>Rally Fotográfico PIRF</h1>
+  </header>
+  <main>
+    
+    <h2>Explora el Rally Fotográfico</h2>
+    <p>El <strong>Rally Fotográfico PIRF</strong> es una emocionante competencia diseñada para fotógrafos de todos los niveles. Los participantes tienen la oportunidad de explorar diferentes lugares, capturar imágenes creativas y competir por el reconocimiento de sus habilidades.</p>
+    <p>Este evento fomenta la creatividad, la pasión por la fotografía y la sana competencia. ¡Es tu momento de brillar y mostrar tu talento al mundo!</p>
+    <p>Consulta las <a href="backend/bases.php" id="enlace-bases">bases del concurso</a> para conocer todos los detalles, incluyendo las reglas, los premios y las fechas importantes.</p>
+    <button onclick="location.href='frontend/public/duelo.html'">Iniciar Duelo</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 PIRF. Todos los derechos reservados.</p>
+  </footer>
+  <script src="frontend/scripts/main.js"></script>
+  <script>window.onload = cargar_nav();
+
+
+function logout() {
+  fetch("/backend/logout.php")
+    .then(response => {
+      if (response.ok) {
+        window.location.href = "frontend/public/login.html";
+      } else {
+        alert("Error al cerrar sesión.");
+      }
+    })
+    .catch(() => {
+      alert("Error al conectar con el servidor.");
+    });
+}
+
+function cargar_nav() {
+  document.getElementById("nav-container").innerHTML = `<nav>
+      <img src="frontend/icons/logo.png" alt="Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+      <a href="index.html">Inicio</a>
+      <a href="frontend/public/participante.html" id="nav-participante">Participante</a>
+      <a href="frontend/public/admin.html" id="nav-admin">Administración</a>
+      <a href="frontend/public/galeria.html">Galería</a>
+      <a href="frontend/public/estadisticas.html">Estadísticas</a>
+      <a href="frontend/public/duelo.html">Duelo</a>
+      <a href="frontend/public/top3.html">Top3</a>
+      <span id="usuario-nav" style="float:right"></span>
+</nav>`;
+
+  fetch("backend/usuario_actual.php")
+    .then(r => r.json())
+    .then(data => {
+      const nav = document.getElementById("usuario-nav");
+      if (data.success && data.nombre) {
+        const navParticipante = document.getElementById("nav-participante");
+        if (data.rol === "admin") {
+          if (navParticipante) {
+            navParticipante.style.display = "none";
+          }
+        }
+        const navAdmin = document.getElementById("nav-admin");
+        if (data.rol === "participante") {
+          if (navAdmin) {
+            navAdmin.style.display = "none";
+          }
+        }
+
+        nav.innerHTML = `<a href='frontend/public/autogestion.html'>👤 ${data.nombre}</a> <a href="#" onclick="logout()"><img id="logout" src="../icons/logout.png" alt="Logout"/></a>`;
+      } else {
+
+        nav.innerHTML = `<a href="frontend/public/login.html">Login</a>`;
+        document.getElementById("nav-admin").style.display = "none";
+        document.getElementById("nav-participante").style.display = "none";
+        
+        const navParticipante = document.getElementById("nav-participante");
+        navParticipante.style.display = "none";
+      }
+    });
+}</script>
+</body>
+</html>

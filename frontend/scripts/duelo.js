@@ -13,6 +13,23 @@ async function comprobarPlazo(clave) {
 
 
 async function cargarDuelo() {
+  // Obtener límite de votos diarios desde la configuración
+  const configRes = await fetch("../../backend/config.php");
+  const config = await configRes.json();
+  const limVotos = parseInt(config.lim_votos, 10);
+
+  // Obtener cantidad de votos hechos hoy por esta IP
+  const votosHoyRes = await fetch("../../backend/votos_hoy.php");
+  const votosHoyData = await votosHoyRes.json();
+  const votosHoy = parseInt(votosHoyData.votos_hoy, 10);
+  console.log("Votos hoy:", votosHoy, "Límite de votos:", limVotos);
+  // Si hay límite y ya se alcanzó, mostrar mensaje y no cargar duelo
+  const divLimVotos = document.getElementById("lim_votos");
+  if (votosHoy >= limVotos) {
+    divLimVotos.style.display = "block";
+    console.log("Límite de votos alcanzado:", limVotos);
+    divLimVotos.innerText = `Ya has alcanzado el máximo de ${limVotos} votos permitidos hoy.`;
+  }else{
   const res = await fetch('../../backend/obtener_duelo.php');
   const errorDiv = document.getElementById("duelo-error");
   errorDiv.innerText = "";
@@ -44,11 +61,11 @@ async function cargarDuelo() {
   fotos.duelo.forEach((foto, index) => {
     const div = document.createElement("div");
     div.innerHTML = `
-      <h4>${foto.titulo}</h4>
       <img src="../../backend/ver_foto.php?id=${foto.id}" width="300" style="cursor:pointer;" onclick="votar(${foto.id}, ${fotos.duelo[1 - index].id})" />
     `;
     container.appendChild(div);
   });
+  }
 }
 
 async function votar(ganadora, perdedora) {

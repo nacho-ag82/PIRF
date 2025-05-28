@@ -1,0 +1,605 @@
+May 26 19:00:57 10.71.57.0 a1356176 Connection from 10.71.57.0 port 55764 on 82.165.90.153 port 22 rdomain ""
+May 26 19:00:57 10.71.57.0 a1356176 Accepted password for a1356176 from 10.71.57.0 port 55764 ssh2
+May 26 19:00:57 10.71.57.0 a1356176 Starting session: subsystem 'sftp' for a1356176 from 10.71.57.0 port 55764 id 0
+May 26 19:00:57 10.71.57.0 a1356176 session opened for local user a1356176 from [10.71.57.0]
+May 26 19:05:57 10.71.57.0 a1356176 session closed for local user a1356176 from [10.71.57.0]
+May 26 19:05:57 10.71.57.0 a1356176 Received disconnect from 10.71.57.0 port 55764:11: Connection terminated by the client.
+May 26 19:52:54 10.71.57.0 a1356176 Connection from 10.71.57.0 port 65456 on 82.165.90.153 port 22 rdomain ""
+May 26 19:52:54 10.71.57.0 a1356176 Accepted password for a1356176 from 10.71.57.0 port 65456 ssh2
+May 26 19:52:54 10.71.57.0 a1356176 Starting session: subsystem 'sftp' for a1356176 from 10.71.57.0 port 65456 id 0
+May 26 19:52:54 10.71.57.0 a1356176 session opened for local user a1356176 from [10.71.57.0]
+May 26 19:57:10 10.71.57.0 a1356176 Connection from 10.71.57.0 port 35384 on 82.165.90.153 port 22 rdomain ""
+May 26 19:57:10 10.71.57.0 a1356176 Accepted password for a1356176 from 10.71.57.0 port 35384 ssh2
+May 26 19:57:10 10.71.57.0 a1356176 Starting session: subsystem 'sftp' for a1356176 from 10.71.57.0 port 35384 id 0
+May 26 19:57:10 10.71.57.0 a1356176 session opened for local user a1356176 from [10.71.57.0]
+May 26 19:57:58 10.71.57.0 a1356176 session closed for local user a1356176 from [10.71.57.0]
+May 26 19:57:58 10.71.57.0 a1356176 Received disconnect from 10.71.57.0 port 65456:11: Connection terminated by the client.
+May 26 20:02:12 10.71.57.0 a1356176 session closed for local user a1356176 from [10.71.57.0]
+May 26 20:02:12 10.71.57.0 a1356176 Received disconnect from 10.71.57.0 port 35384:11: Connection terminated by the client.
+May 26 20:08:44 10.71.56.0 a2460917 Connection from 10.71.56.0 port 48468 on 82.165.90.153 port 22 rdomain ""
+May 26 20:08:44 10.71.56.0 a2460917 Accepted password for a2460917 from 10.71.56.0 port 48468 ssh2
+May 26 20:08:44 10.71.56.0 a2460917 Starting session: subsystem 'sftp' for a2460917 from 10.71.56.0 port 48468 id 0
+May 26 20:08:44 10.71.56.0 a2460917 session opened for local user a2460917 from [10.71.56.0]
+May 26 20:09:29 10.71.56.0 a2460917 Connection from 10.71.56.0 port 52738 on 82.165.90.153 port 22 rdomain ""
+May 26 20:09:29 10.71.56.0 a2460917 Accepted password for a2460917 from 10.71.56.0 port 52738 ssh2
+May 26 20:09:30 10.71.56.0 a2460917 mkdir name "/public" mode 0777
+May 26 20:09:30 10.71.56.0 a2460917 [10.71.56.0|mkdir|0|0|511|0|0|2f7075626c6963|]
+May 26 20:09:59 10.71.56.0 a2460917 mkdir name "/public/icons" mode 0777
+May 26 20:09:59 10.71.56.0 a2460917 [10.71.56.0|mkdir|0|0|511|0|0|2f7075626c69632f69636f6e73|]
+May 26 20:10:52 10.71.56.0 a2460917 mkdir name "/scripts" mode 0777
+May 26 20:10:52 10.71.56.0 a2460917 [10.71.56.0|mkdir|0|0|511|0|0|2f73637269707473|]
+May 26 20:11:02 10.71.56.0 a2460917 mkdir name "/styles" mode 0777
+May 26 20:11:02 10.71.56.0 a2460917 [10.71.56.0|mkdir|0|0|511|0|0|2f7374796c6573|]
+May 26 20:11:35 10.71.56.0 a2460917 open "/icons/amigos.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:11:35 10.71.56.0 a2460917 close "/icons/amigos.jpg" bytes read 0 written 116091
+May 26 20:11:35 10.71.56.0 a2460917 [10.71.56.0|put|0|116091|0|0|0|2f69636f6e732f616d69676f732e6a7067|]
+May 26 20:11:35 10.71.56.0 a2460917 open "/icons/favicon.ico" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:11:35 10.71.56.0 a2460917 close "/icons/favicon.ico" bytes read 0 written 23772
+May 26 20:11:35 10.71.56.0 a2460917 [10.71.56.0|put|0|23772|0|0|0|2f69636f6e732f66617669636f6e2e69636f|]
+May 26 20:11:36 10.71.56.0 a2460917 open "/icons/logo.png" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:11:36 10.71.56.0 a2460917 close "/icons/logo.png" bytes read 0 written 1421011
+May 26 20:11:36 10.71.56.0 a2460917 [10.71.56.0|put|0|1421011|0|0|0|2f69636f6e732f6c6f676f2e706e67|]
+May 26 20:11:36 10.71.56.0 a2460917 open "/icons/logout.png" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:11:36 10.71.56.0 a2460917 close "/icons/logout.png" bytes read 0 written 3591
+May 26 20:11:36 10.71.56.0 a2460917 [10.71.56.0|put|0|3591|0|0|0|2f69636f6e732f6c6f676f75742e706e67|]
+May 26 20:11:36 10.71.56.0 a2460917 open "/icons/stokksnes-sunrise.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:11:36 10.71.56.0 a2460917 close "/icons/stokksnes-sunrise.jpg" bytes read 0 written 436374
+May 26 20:11:36 10.71.56.0 a2460917 [10.71.56.0|put|0|436374|0|0|0|2f69636f6e732f73746f6b6b736e65732d73756e726973652e6a7067|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/galeria.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/galeria.html" bytes read 0 written 777
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|777|0|0|0|2f7075626c69632f67616c657269612e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/top3.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/top3.html" bytes read 0 written 832
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|832|0|0|0|2f7075626c69632f746f70332e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/estadisticas.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/estadisticas.html" bytes read 0 written 790
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|790|0|0|0|2f7075626c69632f6573746164697374696361732e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/admin.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/admin.html" bytes read 0 written 1174
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|1174|0|0|0|2f7075626c69632f61646d696e2e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/login.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/login.html" bytes read 0 written 949
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|949|0|0|0|2f7075626c69632f6c6f67696e2e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/registro.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/registro.html" bytes read 0 written 891
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|891|0|0|0|2f7075626c69632f726567697374726f2e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/duelo.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/duelo.html" bytes read 0 written 791
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|791|0|0|0|2f7075626c69632f6475656c6f2e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/autogestion.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/autogestion.html" bytes read 0 written 1940
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|1940|0|0|0|2f7075626c69632f6175746f67657374696f6e2e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/participante.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/participante.html" bytes read 0 written 1032
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|1032|0|0|0|2f7075626c69632f7061727469636970616e74652e68746d6c|]
+May 26 20:12:07 10.71.56.0 a2460917 open "/public/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:07 10.71.56.0 a2460917 close "/public/index.html" bytes read 0 written 1419
+May 26 20:12:07 10.71.56.0 a2460917 [10.71.56.0|put|0|1419|0|0|0|2f7075626c69632f696e6465782e68746d6c|]
+May 26 20:12:35 10.71.56.0 a2460917 open "/scripts/admin.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:35 10.71.56.0 a2460917 close "/scripts/admin.js" bytes read 0 written 5182
+May 26 20:12:35 10.71.56.0 a2460917 [10.71.56.0|put|0|5182|0|0|0|2f736372697074732f61646d696e2e6a73|]
+May 26 20:12:35 10.71.56.0 a2460917 open "/scripts/autogestion.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:35 10.71.56.0 a2460917 close "/scripts/autogestion.js" bytes read 0 written 3240
+May 26 20:12:35 10.71.56.0 a2460917 [10.71.56.0|put|0|3240|0|0|0|2f736372697074732f6175746f67657374696f6e2e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/duelo.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/duelo.js" bytes read 0 written 2620
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|2620|0|0|0|2f736372697074732f6475656c6f2e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/estadisticas.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/estadisticas.js" bytes read 0 written 2952
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|2952|0|0|0|2f736372697074732f6573746164697374696361732e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/galeria.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/galeria.js" bytes read 0 written 1453
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|1453|0|0|0|2f736372697074732f67616c657269612e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/login.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/login.js" bytes read 0 written 1529
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|1529|0|0|0|2f736372697074732f6c6f67696e2e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/main.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/main.js" bytes read 0 written 1801
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|1801|0|0|0|2f736372697074732f6d61696e2e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/nav.js" bytes read 0 written 2159
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|2159|0|0|0|2f736372697074732f6e61762e6a73|]
+May 26 20:12:36 10.71.56.0 a2460917 open "/scripts/participante.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:36 10.71.56.0 a2460917 close "/scripts/participante.js" bytes read 0 written 2901
+May 26 20:12:36 10.71.56.0 a2460917 [10.71.56.0|put|0|2901|0|0|0|2f736372697074732f7061727469636970616e74652e6a73|]
+May 26 20:12:37 10.71.56.0 a2460917 open "/scripts/registro.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:37 10.71.56.0 a2460917 close "/scripts/registro.js" bytes read 0 written 1976
+May 26 20:12:37 10.71.56.0 a2460917 [10.71.56.0|put|0|1976|0|0|0|2f736372697074732f726567697374726f2e6a73|]
+May 26 20:12:37 10.71.56.0 a2460917 open "/scripts/top3.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:37 10.71.56.0 a2460917 close "/scripts/top3.js" bytes read 0 written 1659
+May 26 20:12:37 10.71.56.0 a2460917 [10.71.56.0|put|0|1659|0|0|0|2f736372697074732f746f70332e6a73|]
+May 26 20:12:51 10.71.56.0 a2460917 open "/styles/admin.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:51 10.71.56.0 a2460917 close "/styles/admin.css" bytes read 0 written 2260
+May 26 20:12:51 10.71.56.0 a2460917 [10.71.56.0|put|0|2260|0|0|0|2f7374796c65732f61646d696e2e637373|]
+May 26 20:12:51 10.71.56.0 a2460917 open "/styles/autogestion.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:51 10.71.56.0 a2460917 close "/styles/autogestion.css" bytes read 0 written 420
+May 26 20:12:51 10.71.56.0 a2460917 [10.71.56.0|put|0|420|0|0|0|2f7374796c65732f6175746f67657374696f6e2e637373|]
+May 26 20:12:51 10.71.56.0 a2460917 open "/styles/duelo.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:51 10.71.56.0 a2460917 close "/styles/duelo.css" bytes read 0 written 589
+May 26 20:12:51 10.71.56.0 a2460917 [10.71.56.0|put|0|589|0|0|0|2f7374796c65732f6475656c6f2e637373|]
+May 26 20:12:51 10.71.56.0 a2460917 open "/styles/estadisticas.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:51 10.71.56.0 a2460917 close "/styles/estadisticas.css" bytes read 0 written 137
+May 26 20:12:51 10.71.56.0 a2460917 [10.71.56.0|put|0|137|0|0|0|2f7374796c65732f6573746164697374696361732e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/galeria.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/galeria.css" bytes read 0 written 419
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|419|0|0|0|2f7374796c65732f67616c657269612e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/general.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/general.css" bytes read 0 written 2205
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|2205|0|0|0|2f7374796c65732f67656e6572616c2e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/index.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/index.css" bytes read 0 written 1183
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|1183|0|0|0|2f7374796c65732f696e6465782e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/login.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/login.css" bytes read 0 written 656
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|656|0|0|0|2f7374796c65732f6c6f67696e2e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/nav.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/nav.css" bytes read 0 written 372
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|372|0|0|0|2f7374796c65732f6e61762e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/participante.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/participante.css" bytes read 0 written 986
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|986|0|0|0|2f7374796c65732f7061727469636970616e74652e637373|]
+May 26 20:12:52 10.71.56.0 a2460917 open "/styles/registro.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:52 10.71.56.0 a2460917 close "/styles/registro.css" bytes read 0 written 481
+May 26 20:12:52 10.71.56.0 a2460917 [10.71.56.0|put|0|481|0|0|0|2f7374796c65732f726567697374726f2e637373|]
+May 26 20:12:53 10.71.56.0 a2460917 open "/styles/top3.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:12:53 10.71.56.0 a2460917 close "/styles/top3.css" bytes read 0 written 809
+May 26 20:12:53 10.71.56.0 a2460917 [10.71.56.0|put|0|809|0|0|0|2f7374796c65732f746f70332e637373|]
+May 26 20:13:45 10.71.57.0 a197794 Connection from 10.71.57.0 port 32980 on 82.165.90.153 port 22 rdomain ""
+May 26 20:13:45 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 32980 ssh2
+May 26 20:13:45 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 32980 id 0
+May 26 20:13:45 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:16:03 10.71.56.0 a2460917 Connection closed by 10.71.56.0 port 52738
+May 26 20:17:53 10.71.56.0 a2460917 session closed for local user a2460917 from [10.71.56.0]
+May 26 20:17:53 10.71.56.0 a2460917 Connection closed by 10.71.56.0 port 48468
+May 26 20:20:06 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:20:06 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 32980:11: Connection terminated by the client.
+May 26 20:22:28 10.71.57.0 a197794 Connection from 10.71.57.0 port 51538 on 82.165.90.153 port 22 rdomain ""
+May 26 20:22:28 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 51538 ssh2
+May 26 20:22:28 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 51538 id 0
+May 26 20:22:28 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:28:34 10.71.56.0 a74179 Connection from 10.71.56.0 port 27304 on 82.165.90.153 port 22 rdomain ""
+May 26 20:28:34 10.71.56.0 a74179 Accepted password for a74179 from 10.71.56.0 port 27304 ssh2
+May 26 20:28:34 10.71.56.0 a74179 Starting session: subsystem 'sftp' for a74179 from 10.71.56.0 port 27304 id 0
+May 26 20:28:34 10.71.56.0 a74179 session opened for local user a74179 from [10.71.56.0]
+May 26 20:28:41 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:28:41 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 51538:11: Connection terminated by the client.
+May 26 20:28:45 10.71.56.0 a74179 Connection from 10.71.56.0 port 10606 on 82.165.90.153 port 22 rdomain ""
+May 26 20:28:45 10.71.56.0 a74179 Accepted password for a74179 from 10.71.56.0 port 10606 ssh2
+May 26 20:28:46 10.71.56.0 a74179 mkdir name "/front" mode 0777
+May 26 20:28:46 10.71.56.0 a74179 [10.71.56.0|mkdir|0|0|511|0|0|2f66726f6e74|]
+May 26 20:29:56 10.71.56.0 a74179 mkdir name "/back" mode 0777
+May 26 20:29:56 10.71.56.0 a74179 [10.71.56.0|mkdir|0|0|511|0|0|2f6261636b|]
+May 26 20:31:01 10.71.57.0 a197794 Connection from 10.71.57.0 port 47708 on 82.165.90.153 port 22 rdomain ""
+May 26 20:31:01 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 47708 ssh2
+May 26 20:31:01 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 47708 id 0
+May 26 20:31:01 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:31:04 10.71.57.0 a197794 Connection from 10.71.57.0 port 47714 on 82.165.90.153 port 22 rdomain ""
+May 26 20:31:04 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 47714 ssh2
+May 26 20:31:05 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 47714 id 0
+May 26 20:31:05 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:34:56 10.71.56.0 a74179 Connection closed by 10.71.56.0 port 10606
+May 26 20:36:03 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:36:03 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 47708:11: Connection terminated by the client.
+May 26 20:36:07 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:36:07 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 47714:11: Connection terminated by the client.
+May 26 20:39:04 10.71.56.0 a74179 session closed for local user a74179 from [10.71.56.0]
+May 26 20:39:04 10.71.56.0 a74179 Connection closed by 10.71.56.0 port 27304
+May 26 20:50:58 10.71.57.0 a197794 Connection from 10.71.57.0 port 25880 on 82.165.90.153 port 22 rdomain ""
+May 26 20:50:58 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 25880 ssh2
+May 26 20:50:59 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 25880 id 0
+May 26 20:50:59 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:51:08 10.71.57.0 a197794 Connection from 10.71.57.0 port 17734 on 82.165.90.153 port 22 rdomain ""
+May 26 20:51:08 10.71.57.0 a197794 Accepted password for a197794 from 10.71.57.0 port 17734 ssh2
+May 26 20:51:09 10.71.57.0 a197794 Starting session: subsystem 'sftp' for a197794 from 10.71.57.0 port 17734 id 0
+May 26 20:51:09 10.71.57.0 a197794 session opened for local user a197794 from [10.71.57.0]
+May 26 20:52:31 10.71.56.0 a713744 Connection from 10.71.56.0 port 13012 on 82.165.90.153 port 22 rdomain ""
+May 26 20:52:34 10.71.56.0 a713744 Failed password for a713744 from 10.71.56.0 port 13012 ssh2
+May 26 20:53:13 10.71.57.0 a713744 Connection from 10.71.57.0 port 38748 on 82.165.90.153 port 22 rdomain ""
+May 26 20:53:14 10.71.57.0 a713744 Accepted password for a713744 from 10.71.57.0 port 38748 ssh2
+May 26 20:53:14 10.71.57.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.57.0 port 38748 id 0
+May 26 20:53:14 10.71.57.0 a713744 session opened for local user a713744 from [10.71.57.0]
+May 26 20:54:50 10.71.57.0 a713744 Connection from 10.71.57.0 port 17108 on 82.165.90.153 port 22 rdomain ""
+May 26 20:54:51 10.71.57.0 a713744 Accepted password for a713744 from 10.71.57.0 port 17108 ssh2
+May 26 20:54:50 10.71.57.0 a713744 Connection from 10.71.57.0 port 17112 on 82.165.90.153 port 22 rdomain ""
+May 26 20:54:51 10.71.57.0 a713744 Accepted password for a713744 from 10.71.57.0 port 17112 ssh2
+May 26 20:54:51 10.71.57.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.57.0 port 17112 id 0
+May 26 20:54:51 10.71.57.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.57.0 port 17108 id 0
+May 26 20:54:51 10.71.57.0 a713744 session opened for local user a713744 from [10.71.57.0]
+May 26 20:54:51 10.71.57.0 a713744 session opened for local user a713744 from [10.71.57.0]
+May 26 20:54:51 10.71.57.0 a713744 open "/duelo_debug.log" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 close "/duelo_debug.log" bytes read 0 written 3854
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|1|3854|0|0|0|2f6475656c6f5f64656275672e6c6f67|]
+May 26 20:54:52 10.71.57.0 a713744 open "/config.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 open "/editar_titulo.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 close "/config.php" bytes read 0 written 2766
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|2766|0|0|0|2f636f6e6669672e706870|]
+May 26 20:54:52 10.71.57.0 a713744 close "/editar_titulo.php" bytes read 0 written 974
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|974|0|0|0|2f6564697461725f746974756c6f2e706870|]
+May 26 20:54:52 10.71.57.0 a713744 open "/eliminar_usuario.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 open "/es_fecha_valida.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 close "/eliminar_usuario.php" bytes read 0 written 1982
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|1982|0|0|0|2f656c696d696e61725f7573756172696f2e706870|]
+May 26 20:54:52 10.71.57.0 a713744 close "/es_fecha_valida.php" bytes read 0 written 454
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|454|0|0|0|2f65735f66656368615f76616c6964612e706870|]
+May 26 20:54:52 10.71.57.0 a713744 open "/estadisticas.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 open "/galeria.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 close "/estadisticas.php" bytes read 0 written 1485
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|1485|0|0|0|2f6573746164697374696361732e706870|]
+May 26 20:54:52 10.71.57.0 a713744 close "/galeria.php" bytes read 0 written 714
+May 26 20:54:52 10.71.57.0 a713744 [10.71.57.0|put|0|714|0|0|0|2f67616c657269612e706870|]
+May 26 20:54:52 10.71.57.0 a713744 open "/login.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:52 10.71.57.0 a713744 open "/logout.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 close "/login.php" bytes read 0 written 513
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|1|513|0|0|0|2f6c6f67696e2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 close "/logout.php" bytes read 0 written 184
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|1|184|0|0|0|2f6c6f676f75742e706870|]
+May 26 20:54:53 10.71.57.0 a713744 open "/mis_fotos.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 open "/obtener_duelo.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 close "/mis_fotos.php" bytes read 0 written 529
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|529|0|0|0|2f6d69735f666f746f732e706870|]
+May 26 20:54:53 10.71.57.0 a713744 close "/obtener_duelo.php" bytes read 0 written 2697
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|2697|0|0|0|2f6f6274656e65725f6475656c6f2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 open "/perfil.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 open "/registrar_voto.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 close "/perfil.php" bytes read 0 written 2405
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|2405|0|0|0|2f70657266696c2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 close "/registrar_voto.php" bytes read 0 written 1466
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|1466|0|0|0|2f7265676973747261725f766f746f2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 open "/registro.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 open "/subir_foto.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 close "/registro.php" bytes read 0 written 796
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|796|0|0|0|2f726567697374726f2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 close "/subir_foto.php" bytes read 0 written 3410
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|3410|0|0|0|2f73756269725f666f746f2e706870|]
+May 26 20:54:53 10.71.57.0 a713744 open "/top3.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 open "/usuario_actual.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:53 10.71.57.0 a713744 close "/top3.php" bytes read 0 written 909
+May 26 20:54:53 10.71.57.0 a713744 [10.71.57.0|put|0|909|0|0|0|2f746f70332e706870|]
+May 26 20:54:54 10.71.57.0 a713744 close "/usuario_actual.php" bytes read 0 written 561
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|1|561|0|0|0|2f7573756172696f5f61637475616c2e706870|]
+May 26 20:54:54 10.71.57.0 a713744 open "/usuarios.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 open "/ver_foto.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 close "/usuarios.php" bytes read 0 written 631
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|631|0|0|0|2f7573756172696f732e706870|]
+May 26 20:54:54 10.71.57.0 a713744 close "/ver_foto.php" bytes read 0 written 476
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|476|0|0|0|2f7665725f666f746f2e706870|]
+May 26 20:54:54 10.71.57.0 a713744 open "/admin_fotos - copia.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 open "/admin_fotos.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 close "/admin_fotos - copia.php" bytes read 0 written 1028
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|1028|0|0|0|2f61646d696e5f666f746f73202d20636f7069612e706870|]
+May 26 20:54:54 10.71.57.0 a713744 close "/admin_fotos.php" bytes read 0 written 1028
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|1028|0|0|0|2f61646d696e5f666f746f732e706870|]
+May 26 20:54:54 10.71.57.0 a713744 open "/cambiar_estado.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 open "/conexion.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 26 20:54:54 10.71.57.0 a713744 close "/conexion.php" bytes read 0 written 318
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|318|0|0|0|2f636f6e6578696f6e2e706870|]
+May 26 20:54:54 10.71.57.0 a713744 close "/cambiar_estado.php" bytes read 0 written 688
+May 26 20:54:54 10.71.57.0 a713744 [10.71.57.0|put|0|688|0|0|0|2f63616d626961725f65737461646f2e706870|]
+May 26 20:55:48 10.71.56.0 a839990 Connection from 10.71.56.0 port 41348 on 82.165.90.153 port 22 rdomain ""
+May 26 20:55:48 10.71.56.0 a839990 Accepted password for a839990 from 10.71.56.0 port 41348 ssh2
+May 26 20:55:48 10.71.56.0 a839990 Starting session: subsystem 'sftp' for a839990 from 10.71.56.0 port 41348 id 0
+May 26 20:55:48 10.71.56.0 a839990 session opened for local user a839990 from [10.71.56.0]
+May 26 20:55:54 10.71.57.0 a713744 session closed for local user a713744 from [10.71.57.0]
+May 26 20:55:54 10.71.57.0 a713744 Connection closed by 10.71.57.0 port 17108
+May 26 20:55:54 10.71.57.0 a713744 session closed for local user a713744 from [10.71.57.0]
+May 26 20:55:54 10.71.57.0 a713744 Connection closed by 10.71.57.0 port 17112
+May 26 20:56:02 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:56:02 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 25880:11: Connection terminated by the client.
+May 26 20:56:11 10.71.57.0 a197794 session closed for local user a197794 from [10.71.57.0]
+May 26 20:56:11 10.71.57.0 a197794 Received disconnect from 10.71.57.0 port 17734:11: Connection terminated by the client.
+May 26 21:00:56 10.71.56.0 a839990 session closed for local user a839990 from [10.71.56.0]
+May 26 21:00:56 10.71.56.0 a839990 Connection closed by 10.71.56.0 port 41348
+May 26 23:05:23 10.71.57.0 a713744 Connection closed by 10.71.57.0 port 38748
+May 26 23:05:23 10.71.57.0 a713744 session closed for local user a713744 from [10.71.57.0]
+May 27 14:57:38 10.71.57.0 a848595 Connection from 10.71.57.0 port 12334 on 82.165.90.153 port 22 rdomain ""
+May 27 14:57:38 10.71.57.0 a848595 Accepted password for a848595 from 10.71.57.0 port 12334 ssh2
+May 27 14:57:39 10.71.57.0 a848595 Starting session: subsystem 'sftp' for a848595 from 10.71.57.0 port 12334 id 0
+May 27 14:57:39 10.71.57.0 a848595 session opened for local user a848595 from [10.71.57.0]
+May 27 14:57:49 10.71.57.0 a848595 Connection from 10.71.57.0 port 63482 on 82.165.90.153 port 22 rdomain ""
+May 27 14:57:49 10.71.57.0 a848595 Accepted password for a848595 from 10.71.57.0 port 63482 ssh2
+May 27 14:57:49 10.71.57.0 a848595 posix-rename old "/back" new "/backend"
+May 27 14:57:49 10.71.57.0 a848595 [10.71.57.0|posix-rename|0|0|0|0|0|2f6261636b|2f6261636b656e64]
+May 27 14:58:00 10.71.57.0 a848595 posix-rename old "/front" new "/frontend"
+May 27 14:58:00 10.71.57.0 a848595 [10.71.57.0|posix-rename|0|0|0|0|0|2f66726f6e74|2f66726f6e74656e64]
+May 27 15:01:09 10.71.57.0 a2407415 Connection from 10.71.57.0 port 38108 on 82.165.90.153 port 22 rdomain ""
+May 27 15:01:09 10.71.57.0 a2407415 Accepted password for a2407415 from 10.71.57.0 port 38108 ssh2
+May 27 15:01:09 10.71.57.0 a2407415 Starting session: subsystem 'sftp' for a2407415 from 10.71.57.0 port 38108 id 0
+May 27 15:01:09 10.71.57.0 a2407415 session opened for local user a2407415 from [10.71.57.0]
+May 27 15:03:00 10.71.57.0 a848595 Connection closed by 10.71.57.0 port 63482
+May 27 15:04:57 10.71.57.0 a2407415 Connection from 10.71.57.0 port 49592 on 82.165.90.153 port 22 rdomain ""
+May 27 15:04:57 10.71.57.0 a2407415 Accepted password for a2407415 from 10.71.57.0 port 49592 ssh2
+May 27 15:04:58 10.71.57.0 a2407415 Starting session: subsystem 'sftp' for a2407415 from 10.71.57.0 port 49592 id 0
+May 27 15:04:58 10.71.57.0 a2407415 session opened for local user a2407415 from [10.71.57.0]
+May 27 15:05:39 10.71.57.0 a848595 session closed for local user a848595 from [10.71.57.0]
+May 27 15:05:39 10.71.57.0 a848595 Connection closed by 10.71.57.0 port 12334
+May 27 15:06:30 10.71.57.0 a2407415 session closed for local user a2407415 from [10.71.57.0]
+May 27 15:06:30 10.71.57.0 a2407415 Received disconnect from 10.71.57.0 port 38108:11: Connection terminated by the client.
+May 27 15:08:09 10.71.57.0 a2408576 Connection from 10.71.57.0 port 28122 on 82.165.90.153 port 22 rdomain ""
+May 27 15:08:10 10.71.57.0 a2408576 Accepted password for a2408576 from 10.71.57.0 port 28122 ssh2
+May 27 15:08:10 10.71.57.0 a2408576 Starting session: subsystem 'sftp' for a2408576 from 10.71.57.0 port 28122 id 0
+May 27 15:08:10 10.71.57.0 a2408576 session opened for local user a2408576 from [10.71.57.0]
+May 27 15:09:58 10.71.57.0 a2407415 session closed for local user a2407415 from [10.71.57.0]
+May 27 15:09:58 10.71.57.0 a2407415 Received disconnect from 10.71.57.0 port 49592:11: Connection terminated by the client.
+May 27 15:12:02 10.71.57.0 a2408576 open "/frontend/public/admin.html" flags READ mode 0666
+May 27 15:12:02 10.71.57.0 a2408576 close "/frontend/public/admin.html" bytes read 1174 written 0
+May 27 15:12:02 10.71.57.0 a2408576 [10.71.57.0|get|0|1174|0|0|0|2f66726f6e74656e642f7075626c69632f61646d696e2e68746d6c|]
+May 27 15:12:19 10.71.57.0 a2408576 open "/frontend/public/admin.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:12:19 10.71.57.0 a2408576 close "/frontend/public/admin.html" bytes read 0 written 1174
+May 27 15:12:19 10.71.57.0 a2408576 [10.71.57.0|put|0|1174|0|0|0|2f66726f6e74656e642f7075626c69632f61646d696e2e68746d6c|]
+May 27 15:14:26 10.71.57.0 a1939291 Connection from 10.71.57.0 port 11250 on 82.165.90.153 port 22 rdomain ""
+May 27 15:14:27 10.71.57.0 a1939291 Accepted password for a1939291 from 10.71.57.0 port 11250 ssh2
+May 27 15:14:49 10.71.57.0 a2408576 open "/frontend/index.html" flags READ mode 0666
+May 27 15:14:49 10.71.57.0 a2408576 close "/frontend/index.html" bytes read 1419 written 0
+May 27 15:14:49 10.71.57.0 a2408576 [10.71.57.0|get|0|1419|0|0|0|2f66726f6e74656e642f696e6465782e68746d6c|]
+May 27 15:15:10 10.71.57.0 a2408576 open "/frontend/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:15:10 10.71.57.0 a2408576 close "/frontend/index.html" bytes read 0 written 1414
+May 27 15:15:10 10.71.57.0 a2408576 [10.71.57.0|put|0|1414|0|0|0|2f66726f6e74656e642f696e6465782e68746d6c|]
+May 27 15:15:37 10.71.57.0 a2407415 Connection from 10.71.57.0 port 36172 on 82.165.90.153 port 22 rdomain ""
+May 27 15:15:37 10.71.57.0 a2407415 Accepted password for a2407415 from 10.71.57.0 port 36172 ssh2
+May 27 15:15:38 10.71.57.0 a2407415 Starting session: subsystem 'sftp' for a2407415 from 10.71.57.0 port 36172 id 0
+May 27 15:15:38 10.71.57.0 a2407415 session opened for local user a2407415 from [10.71.57.0]
+May 27 15:19:00 10.71.57.0 a2408576 open "/index.html" flags READ mode 0666
+May 27 15:19:00 10.71.57.0 a2408576 close "/index.html" bytes read 1414 written 0
+May 27 15:19:00 10.71.57.0 a2408576 [10.71.57.0|get|0|1414|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:20:22 10.71.57.0 a2408576 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:20:22 10.71.57.0 a2408576 close "/index.html" bytes read 0 written 1455
+May 27 15:20:22 10.71.57.0 a2408576 [10.71.57.0|put|0|1455|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:20:24 10.71.57.0 a2408576 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:20:24 10.71.57.0 a2408576 close "/index.html" bytes read 0 written 1455
+May 27 15:20:24 10.71.57.0 a2408576 [10.71.57.0|put|0|1455|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:20:57 10.71.57.0 a2408576 open "/index.html" flags READ mode 0666
+May 27 15:20:57 10.71.57.0 a2408576 close "/index.html" bytes read 1455 written 0
+May 27 15:20:57 10.71.57.0 a2408576 [10.71.57.0|get|0|1455|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:21:45 10.71.57.0 a2408576 open "/frontend/scripts/nav.js" flags READ mode 0666
+May 27 15:21:45 10.71.57.0 a2408576 close "/frontend/scripts/nav.js" bytes read 2159 written 0
+May 27 15:21:45 10.71.57.0 a2408576 [10.71.57.0|get|0|2159|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:23:05 10.71.57.0 a1939291 Connection closed by 10.71.57.0 port 11250
+May 27 15:23:33 10.71.57.0 a2407415 session closed for local user a2407415 from [10.71.57.0]
+May 27 15:23:33 10.71.57.0 a2407415 Received disconnect from 10.71.57.0 port 36172:11: Connection terminated by the client.
+May 27 15:25:19 10.71.57.0 a2408576 open "/index.html" flags READ mode 0666
+May 27 15:25:19 10.71.57.0 a2408576 close "/index.html" bytes read 1455 written 0
+May 27 15:25:19 10.71.57.0 a2408576 [10.71.57.0|get|0|1455|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:26:36 10.71.57.0 a2408576 open "/frontend/scripts/nav.js" flags READ mode 0666
+May 27 15:26:36 10.71.57.0 a2408576 close "/frontend/scripts/nav.js" bytes read 2159 written 0
+May 27 15:26:36 10.71.57.0 a2408576 [10.71.57.0|get|0|2159|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:27:20 10.71.57.0 a2408576 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:27:20 10.71.57.0 a2408576 close "/index.html" bytes read 0 written 3525
+May 27 15:27:20 10.71.57.0 a2408576 [10.71.57.0|put|0|3525|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:27:40 10.71.57.0 a2408576 open "/index.html" flags READ mode 0666
+May 27 15:27:40 10.71.57.0 a2408576 close "/index.html" bytes read 3525 written 0
+May 27 15:27:40 10.71.57.0 a2408576 [10.71.57.0|get|0|3525|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:32:40 10.71.57.0 a2408576 session closed for local user a2408576 from [10.71.57.0]
+May 27 15:32:40 10.71.57.0 a2408576 Connection closed by 10.71.57.0 port 28122
+May 27 15:33:18 10.71.57.0 a1822684 Connection from 10.71.57.0 port 30606 on 82.165.90.153 port 22 rdomain ""
+May 27 15:33:19 10.71.57.0 a1822684 Accepted password for a1822684 from 10.71.57.0 port 30606 ssh2
+May 27 15:33:19 10.71.57.0 a1822684 Starting session: subsystem 'sftp' for a1822684 from 10.71.57.0 port 30606 id 0
+May 27 15:33:19 10.71.57.0 a1822684 session opened for local user a1822684 from [10.71.57.0]
+May 27 15:33:19 10.71.57.0 a1822684 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:33:19 10.71.57.0 a1822684 close "/index.html" bytes read 0 written 3633
+May 27 15:33:19 10.71.57.0 a1822684 [10.71.57.0|put|0|3633|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:33:47 10.71.57.0 a1822684 open "/index.html" flags READ mode 0666
+May 27 15:33:47 10.71.57.0 a1822684 close "/index.html" bytes read 3633 written 0
+May 27 15:33:47 10.71.57.0 a1822684 [10.71.57.0|get|0|3633|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:38:13 10.71.57.0 a1822684 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:38:13 10.71.57.0 a1822684 close "/index.html" bytes read 0 written 3628
+May 27 15:38:13 10.71.57.0 a1822684 [10.71.57.0|put|0|3628|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:44:32 10.71.57.0 a1822684 open "/backend/conexion.php" flags READ mode 0666
+May 27 15:44:32 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 318 written 0
+May 27 15:44:32 10.71.57.0 a1822684 [10.71.57.0|get|0|318|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:44:56 10.71.57.0 a1822684 open "/backend/conexion.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:44:56 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 0 written 382
+May 27 15:44:56 10.71.57.0 a1822684 [10.71.57.0|put|0|382|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:45:41 10.71.57.0 a1822684 open "/backend/config.php" flags READ mode 0666
+May 27 15:45:41 10.71.57.0 a1822684 close "/backend/config.php" bytes read 2766 written 0
+May 27 15:45:41 10.71.57.0 a1822684 [10.71.57.0|get|0|2766|0|0|0|2f6261636b656e642f636f6e6669672e706870|]
+May 27 15:45:55 10.71.57.0 a1822684 open "/backend/conexion.php" flags READ mode 0666
+May 27 15:45:55 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 382 written 0
+May 27 15:45:55 10.71.57.0 a1822684 [10.71.57.0|get|0|382|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:46:48 10.71.57.0 a1822684 open "/backend/conexion.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:46:48 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 0 written 374
+May 27 15:46:48 10.71.57.0 a1822684 [10.71.57.0|put|0|374|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:47:53 10.71.57.0 a1822684 open "/backend/config.php" flags READ mode 0666
+May 27 15:47:53 10.71.57.0 a1822684 close "/backend/config.php" bytes read 2766 written 0
+May 27 15:47:53 10.71.57.0 a1822684 [10.71.57.0|get|0|2766|0|0|0|2f6261636b656e642f636f6e6669672e706870|]
+May 27 15:47:57 10.71.57.0 a1822684 open "/backend/conexion.php" flags READ mode 0666
+May 27 15:47:57 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 374 written 0
+May 27 15:47:57 10.71.57.0 a1822684 [10.71.57.0|get|0|374|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:48:13 10.71.57.0 a1822684 open "/backend/conexion.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:48:13 10.71.57.0 a1822684 close "/backend/conexion.php" bytes read 0 written 370
+May 27 15:48:13 10.71.57.0 a1822684 [10.71.57.0|put|0|370|0|0|0|2f6261636b656e642f636f6e6578696f6e2e706870|]
+May 27 15:50:37 10.71.57.0 a1822684 open "/index.html" flags READ mode 0666
+May 27 15:50:37 10.71.57.0 a1822684 close "/index.html" bytes read 3628 written 0
+May 27 15:50:37 10.71.57.0 a1822684 [10.71.57.0|get|0|3628|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:51:42 10.71.57.0 a1822684 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:51:42 10.71.57.0 a1822684 close "/index.html" bytes read 0 written 3630
+May 27 15:51:42 10.71.57.0 a1822684 [10.71.57.0|put|0|3630|0|0|0|2f696e6465782e68746d6c|]
+May 27 15:52:12 10.71.57.0 a1822684 open "/frontend/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:52:12 10.71.57.0 a1822684 close "/frontend/scripts/nav.js" bytes read 0 written 2106
+May 27 15:52:12 10.71.57.0 a1822684 [10.71.57.0|put|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:53:03 10.71.57.0 a1822684 open "/frontend/scripts/nav.js" flags READ mode 0666
+May 27 15:53:03 10.71.57.0 a1822684 close "/frontend/scripts/nav.js" bytes read 2106 written 0
+May 27 15:53:03 10.71.57.0 a1822684 [10.71.57.0|get|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:54:01 10.71.57.0 a1822684 open "/frontend/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:54:01 10.71.57.0 a1822684 close "/frontend/scripts/nav.js" bytes read 0 written 2106
+May 27 15:54:01 10.71.57.0 a1822684 [10.71.57.0|put|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:54:03 10.71.57.0 a1822684 open "/frontend/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 15:54:03 10.71.57.0 a1822684 close "/frontend/scripts/nav.js" bytes read 0 written 2106
+May 27 15:54:03 10.71.57.0 a1822684 [10.71.57.0|put|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 15:59:05 10.71.57.0 a1822684 session closed for local user a1822684 from [10.71.57.0]
+May 27 15:59:05 10.71.57.0 a1822684 Connection closed by 10.71.57.0 port 30606
+May 27 15:59:57 10.71.57.0 a2411065 Connection from 10.71.57.0 port 16938 on 82.165.90.153 port 22 rdomain ""
+May 27 15:59:57 10.71.57.0 a2411065 Accepted password for a2411065 from 10.71.57.0 port 16938 ssh2
+May 27 15:59:58 10.71.57.0 a2411065 Starting session: subsystem 'sftp' for a2411065 from 10.71.57.0 port 16938 id 0
+May 27 15:59:58 10.71.57.0 a2411065 session opened for local user a2411065 from [10.71.57.0]
+May 27 15:59:58 10.71.57.0 a2411065 open "/frontend/scripts/nav.js" flags READ mode 0666
+May 27 15:59:58 10.71.57.0 a2411065 close "/frontend/scripts/nav.js" bytes read 2106 written 0
+May 27 15:59:58 10.71.57.0 a2411065 [10.71.57.0|get|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 16:02:44 10.71.57.0 a2411065 open "/frontend/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:02:44 10.71.57.0 a2411065 close "/frontend/scripts/nav.js" bytes read 0 written 2106
+May 27 16:02:44 10.71.57.0 a2411065 [10.71.57.0|put|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 16:03:30 10.71.57.0 a2411065 open "/index.html" flags READ mode 0666
+May 27 16:03:30 10.71.57.0 a2411065 close "/index.html" bytes read 3630 written 0
+May 27 16:03:30 10.71.57.0 a2411065 [10.71.57.0|get|0|3630|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:03:52 10.71.57.0 a2411065 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:03:52 10.71.57.0 a2411065 close "/index.html" bytes read 0 written 3630
+May 27 16:03:52 10.71.57.0 a2411065 [10.71.57.0|put|0|3630|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:04:02 10.71.57.0 a2411065 open "/index.html" flags READ mode 0666
+May 27 16:04:02 10.71.57.0 a2411065 close "/index.html" bytes read 3630 written 0
+May 27 16:04:02 10.71.57.0 a2411065 [10.71.57.0|get|0|3630|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:04:08 10.71.57.0 a2411065 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:04:08 10.71.57.0 a2411065 close "/index.html" bytes read 0 written 3629
+May 27 16:04:08 10.71.57.0 a2411065 [10.71.57.0|put|0|3629|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:04:10 10.71.57.0 a2411065 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:04:10 10.71.57.0 a2411065 close "/index.html" bytes read 0 written 3629
+May 27 16:04:10 10.71.57.0 a2411065 [10.71.57.0|put|0|3629|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:07:08 10.71.57.0 a2411065 open "/frontend/scripts/nav.js" flags READ mode 0666
+May 27 16:07:08 10.71.57.0 a2411065 close "/frontend/scripts/nav.js" bytes read 2106 written 0
+May 27 16:07:08 10.71.57.0 a2411065 [10.71.57.0|get|0|2106|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 16:07:41 10.71.57.0 a2411065 open "/frontend/scripts/nav.js" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:07:41 10.71.57.0 a2411065 close "/frontend/scripts/nav.js" bytes read 0 written 2099
+May 27 16:07:41 10.71.57.0 a2411065 [10.71.57.0|put|0|2099|0|0|0|2f66726f6e74656e642f736372697074732f6e61762e6a73|]
+May 27 16:08:02 10.71.57.0 a2411065 open "/frontend/scripts/galeria.js" flags READ mode 0666
+May 27 16:08:02 10.71.57.0 a2411065 close "/frontend/scripts/galeria.js" bytes read 1453 written 0
+May 27 16:08:02 10.71.57.0 a2411065 [10.71.57.0|get|0|1453|0|0|0|2f66726f6e74656e642f736372697074732f67616c657269612e6a73|]
+May 27 16:13:02 10.71.57.0 a2411065 session closed for local user a2411065 from [10.71.57.0]
+May 27 16:13:02 10.71.57.0 a2411065 Connection closed by 10.71.57.0 port 16938
+May 27 16:13:43 10.71.57.0 a1846744 Connection from 10.71.57.0 port 29120 on 82.165.90.153 port 22 rdomain ""
+May 27 16:13:43 10.71.57.0 a1846744 Accepted password for a1846744 from 10.71.57.0 port 29120 ssh2
+May 27 16:13:43 10.71.57.0 a1846744 Starting session: subsystem 'sftp' for a1846744 from 10.71.57.0 port 29120 id 0
+May 27 16:13:43 10.71.57.0 a1846744 session opened for local user a1846744 from [10.71.57.0]
+May 27 16:18:44 10.71.57.0 a1846744 session closed for local user a1846744 from [10.71.57.0]
+May 27 16:18:44 10.71.57.0 a1846744 Connection closed by 10.71.57.0 port 29120
+May 27 16:27:03 10.71.57.0 a2412953 Connection from 10.71.57.0 port 21308 on 82.165.90.153 port 22 rdomain ""
+May 27 16:27:03 10.71.57.0 a2412953 Accepted password for a2412953 from 10.71.57.0 port 21308 ssh2
+May 27 16:27:03 10.71.57.0 a2412953 Starting session: subsystem 'sftp' for a2412953 from 10.71.57.0 port 21308 id 0
+May 27 16:27:03 10.71.57.0 a2412953 session opened for local user a2412953 from [10.71.57.0]
+May 27 16:27:12 10.71.57.0 a2412953 open "/frontend/styles/general.css" flags READ mode 0666
+May 27 16:27:12 10.71.57.0 a2412953 close "/frontend/styles/general.css" bytes read 2205 written 0
+May 27 16:27:12 10.71.57.0 a2412953 [10.71.57.0|get|0|2205|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 16:27:44 10.71.57.0 a2412953 open "/frontend/styles/general.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:27:44 10.71.57.0 a2412953 close "/frontend/styles/general.css" bytes read 0 written 2070
+May 27 16:27:44 10.71.57.0 a2412953 [10.71.57.0|put|0|2070|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 16:28:16 10.71.57.0 a2412953 open "/frontend/styles/general.css" flags READ mode 0666
+May 27 16:28:16 10.71.57.0 a2412953 close "/frontend/styles/general.css" bytes read 2070 written 0
+May 27 16:28:16 10.71.57.0 a2412953 [10.71.57.0|get|0|2070|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 16:31:46 10.71.57.0 a2412953 open "/frontend/styles/general.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:31:46 10.71.57.0 a2412953 close "/frontend/styles/general.css" bytes read 0 written 2070
+May 27 16:31:46 10.71.57.0 a2412953 [10.71.57.0|put|0|2070|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 16:36:51 10.71.57.0 a2412953 session closed for local user a2412953 from [10.71.57.0]
+May 27 16:36:51 10.71.57.0 a2412953 Connection closed by 10.71.57.0 port 21308
+May 27 16:48:35 10.71.57.0 a1866913 Connection from 10.71.57.0 port 44744 on 82.165.90.153 port 22 rdomain ""
+May 27 16:48:35 10.71.57.0 a1866913 Accepted password for a1866913 from 10.71.57.0 port 44744 ssh2
+May 27 16:48:38 10.71.57.0 a1866913 Connection from 10.71.57.0 port 38040 on 82.165.90.153 port 22 rdomain ""
+May 27 16:48:38 10.71.57.0 a1866913 Accepted password for a1866913 from 10.71.57.0 port 38040 ssh2
+May 27 16:48:38 10.71.57.0 a1866913 Starting session: subsystem 'sftp' for a1866913 from 10.71.57.0 port 38040 id 0
+May 27 16:48:38 10.71.57.0 a1866913 session opened for local user a1866913 from [10.71.57.0]
+May 27 16:48:38 10.71.57.0 a1866913 mkdir name "/documentos" mode 0777
+May 27 16:48:38 10.71.57.0 a1866913 [10.71.57.0|mkdir|0|0|511|0|0|2f646f63756d656e746f73|]
+May 27 16:49:01 10.71.57.0 a1866913 open "/documentos/bases pirf.pdf" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:49:01 10.71.57.0 a1866913 close "/documentos/bases pirf.pdf" bytes read 0 written 150490
+May 27 16:49:01 10.71.57.0 a1866913 [10.71.57.0|put|0|150490|0|0|0|2f646f63756d656e746f732f626173657320706972662e706466|]
+May 27 16:49:17 10.71.57.0 a1866913 posix-rename old "/documentos/bases pirf.pdf" new "/documentos/dases_pirf.pdf"
+May 27 16:49:17 10.71.57.0 a1866913 [10.71.57.0|posix-rename|0|0|0|0|0|2f646f63756d656e746f732f626173657320706972662e706466|2f646f63756d656e746f732f64617365735f706972662e706466]
+May 27 16:53:49 10.71.57.0 a1866913 open "/backend/bases.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:53:49 10.71.57.0 a1866913 close "/backend/bases.php" bytes read 0 written 374
+May 27 16:53:49 10.71.57.0 a1866913 [10.71.57.0|put|0|374|0|0|0|2f6261636b656e642f62617365732e706870|]
+May 27 16:54:17 10.71.57.0 a1866913 Connection closed by 10.71.57.0 port 44744
+May 27 16:55:01 10.71.57.0 a2339737 Connection from 10.71.57.0 port 55840 on 82.165.90.153 port 22 rdomain ""
+May 27 16:55:01 10.71.57.0 a2339737 Accepted password for a2339737 from 10.71.57.0 port 55840 ssh2
+May 27 16:55:24 10.71.57.0 a1866913 open "/index.html" flags READ mode 0666
+May 27 16:55:24 10.71.57.0 a1866913 close "/index.html" bytes read 3629 written 0
+May 27 16:55:24 10.71.57.0 a1866913 [10.71.57.0|get|0|3629|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:55:52 10.71.57.0 a1866913 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:55:52 10.71.57.0 a1866913 close "/index.html" bytes read 0 written 3636
+May 27 16:55:52 10.71.57.0 a1866913 [10.71.57.0|put|0|3636|0|0|0|2f696e6465782e68746d6c|]
+May 27 16:56:20 10.71.57.0 a1866913 open "/backend/bases.php" flags READ mode 0666
+May 27 16:56:20 10.71.57.0 a1866913 close "/backend/bases.php" bytes read 374 written 0
+May 27 16:56:20 10.71.57.0 a1866913 [10.71.57.0|get|0|374|0|0|0|2f6261636b656e642f62617365732e706870|]
+May 27 16:57:31 10.71.57.0 a1866913 posix-rename old "/documentos/dases_pirf.pdf" new "/documentos/bases_pirf.pdf"
+May 27 16:57:31 10.71.57.0 a1866913 [10.71.57.0|posix-rename|0|0|0|0|0|2f646f63756d656e746f732f64617365735f706972662e706466|2f646f63756d656e746f732f62617365735f706972662e706466]
+May 27 16:58:49 10.71.57.0 a1866913 open "/backend/bases.php" flags READ mode 0666
+May 27 16:58:49 10.71.57.0 a1866913 close "/backend/bases.php" bytes read 374 written 0
+May 27 16:58:49 10.71.57.0 a1866913 [10.71.57.0|get|0|374|0|0|0|2f6261636b656e642f62617365732e706870|]
+May 27 16:59:09 10.71.57.0 a1866913 open "/backend/bases.php" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 16:59:09 10.71.57.0 a1866913 close "/backend/bases.php" bytes read 0 written 424
+May 27 16:59:09 10.71.57.0 a1866913 [10.71.57.0|put|0|424|0|0|0|2f6261636b656e642f62617365732e706870|]
+May 27 17:02:31 10.71.57.0 a2339737 Connection closed by 10.71.57.0 port 55840
+May 27 17:04:12 10.71.57.0 a1866913 session closed for local user a1866913 from [10.71.57.0]
+May 27 17:04:12 10.71.57.0 a1866913 Connection closed by 10.71.57.0 port 38040
+May 27 17:13:12 10.71.57.0 a713744 Connection from 10.71.57.0 port 32708 on 82.165.90.153 port 22 rdomain ""
+May 27 17:13:12 10.71.57.0 a713744 Accepted password for a713744 from 10.71.57.0 port 32708 ssh2
+May 27 17:13:12 10.71.57.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.57.0 port 32708 id 0
+May 27 17:13:12 10.71.57.0 a713744 session opened for local user a713744 from [10.71.57.0]
+May 27 17:18:51 10.71.57.0 a713744 Connection closed by 10.71.57.0 port 32708
+May 27 17:18:51 10.71.57.0 a713744 session closed for local user a713744 from [10.71.57.0]
+May 27 17:41:30 10.71.56.0 a2619680 Connection from 10.71.56.0 port 38744 on 82.165.90.153 port 22 rdomain ""
+May 27 17:41:30 10.71.56.0 a2619680 Accepted password for a2619680 from 10.71.56.0 port 38744 ssh2
+May 27 17:41:30 10.71.56.0 a2619680 Starting session: subsystem 'sftp' for a2619680 from 10.71.56.0 port 38744 id 0
+May 27 17:41:30 10.71.56.0 a2619680 session opened for local user a2619680 from [10.71.56.0]
+May 27 17:42:03 10.71.56.0 a2619680 open "/index.html" flags READ mode 0666
+May 27 17:42:03 10.71.56.0 a2619680 close "/index.html" bytes read 3636 written 0
+May 27 17:42:03 10.71.56.0 a2619680 [10.71.56.0|get|0|3636|0|0|0|2f696e6465782e68746d6c|]
+May 27 17:42:52 10.71.56.0 a2619680 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 17:42:52 10.71.56.0 a2619680 close "/index.html" bytes read 0 written 3660
+May 27 17:42:52 10.71.56.0 a2619680 [10.71.56.0|put|0|3660|0|0|0|2f696e6465782e68746d6c|]
+May 27 17:42:54 10.71.56.0 a2619680 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 17:42:54 10.71.56.0 a2619680 close "/index.html" bytes read 0 written 3660
+May 27 17:42:54 10.71.56.0 a2619680 [10.71.56.0|put|0|3660|0|0|0|2f696e6465782e68746d6c|]
+May 27 17:52:20 10.71.56.0 a2619680 session closed for local user a2619680 from [10.71.56.0]
+May 27 17:52:20 10.71.56.0 a2619680 Connection closed by 10.71.56.0 port 38744
+May 27 17:54:44 10.71.56.0 a2203545 Connection from 10.71.56.0 port 47252 on 82.165.90.153 port 22 rdomain ""
+May 27 17:54:44 10.71.56.0 a2203545 Accepted password for a2203545 from 10.71.56.0 port 47252 ssh2
+May 27 17:54:45 10.71.56.0 a2203545 Starting session: subsystem 'sftp' for a2203545 from 10.71.56.0 port 47252 id 0
+May 27 17:54:45 10.71.56.0 a2203545 session opened for local user a2203545 from [10.71.56.0]
+May 27 17:55:21 10.71.56.0 a2203545 open "/frontend/styles/general.css" flags READ mode 0666
+May 27 17:55:21 10.71.56.0 a2203545 close "/frontend/styles/general.css" bytes read 2070 written 0
+May 27 17:55:21 10.71.56.0 a2203545 [10.71.56.0|get|0|2070|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 17:55:32 10.71.56.0 a2203545 open "/frontend/styles/general.css" flags WRITE,CREATE,TRUNCATE mode 0666
+May 27 17:55:32 10.71.56.0 a2203545 close "/frontend/styles/general.css" bytes read 0 written 2052
+May 27 17:55:32 10.71.56.0 a2203545 [10.71.56.0|put|0|2052|0|0|0|2f66726f6e74656e642f7374796c65732f67656e6572616c2e637373|]
+May 27 18:00:38 10.71.56.0 a2203545 session closed for local user a2203545 from [10.71.56.0]
+May 27 18:00:38 10.71.56.0 a2203545 Connection closed by 10.71.56.0 port 47252
+May 27 19:28:31 10.71.56.0 a258203 Connection from 10.71.56.0 port 12036 on 82.165.90.153 port 22 rdomain ""
+May 27 19:28:31 10.71.56.0 a258203 Accepted password for a258203 from 10.71.56.0 port 12036 ssh2
+May 27 19:28:31 10.71.56.0 a258203 Starting session: subsystem 'sftp' for a258203 from 10.71.56.0 port 12036 id 0
+May 27 19:28:31 10.71.56.0 a258203 session opened for local user a258203 from [10.71.56.0]
+May 27 19:28:39 10.71.56.0 a258203 open "/backend/duelo_debug.log" flags READ mode 0666
+May 27 19:28:39 10.71.56.0 a258203 close "/backend/duelo_debug.log" bytes read 3854 written 0
+May 27 19:28:39 10.71.56.0 a258203 [10.71.56.0|get|0|3854|0|0|0|2f6261636b656e642f6475656c6f5f64656275672e6c6f67|]
+May 27 19:29:10 10.71.56.0 a258203 open "/backend/registrar_voto.php" flags READ mode 0666
+May 27 19:29:10 10.71.56.0 a258203 close "/backend/registrar_voto.php" bytes read 1466 written 0
+May 27 19:29:10 10.71.56.0 a258203 [10.71.56.0|get|0|1466|0|0|0|2f6261636b656e642f7265676973747261725f766f746f2e706870|]
+May 27 19:29:56 10.71.56.0 a258203 open "/backend/obtener_duelo.php" flags READ mode 0666
+May 27 19:29:56 10.71.56.0 a258203 close "/backend/obtener_duelo.php" bytes read 2697 written 0
+May 27 19:29:56 10.71.56.0 a258203 [10.71.56.0|get|0|2697|0|0|0|2f6261636b656e642f6f6274656e65725f6475656c6f2e706870|]
+May 27 19:32:24 10.71.57.0 a920985 Connection from 10.71.57.0 port 43502 on 82.165.90.153 port 22 rdomain ""
+May 27 19:32:24 10.71.57.0 a920985 Accepted password for a920985 from 10.71.57.0 port 43502 ssh2
+May 27 19:32:24 10.71.57.0 a920985 Starting session: subsystem 'sftp' for a920985 from 10.71.57.0 port 43502 id 0
+May 27 19:32:24 10.71.57.0 a920985 session opened for local user a920985 from [10.71.57.0]
+May 27 19:32:27 10.71.57.0 a920985 Connection from 10.71.57.0 port 43506 on 82.165.90.153 port 22 rdomain ""
+May 27 19:32:27 10.71.57.0 a920985 Accepted password for a920985 from 10.71.57.0 port 43506 ssh2
+May 27 19:32:28 10.71.57.0 a920985 Starting session: subsystem 'sftp' for a920985 from 10.71.57.0 port 43506 id 0
+May 27 19:32:28 10.71.57.0 a920985 session opened for local user a920985 from [10.71.57.0]
+May 27 19:33:14 10.71.57.0 a713744 Connection from 10.71.57.0 port 30752 on 82.165.90.153 port 22 rdomain ""
+May 27 19:33:23 10.71.57.0 a713744 Accepted password for a713744 from 10.71.57.0 port 30752 ssh2
+May 27 19:33:23 10.71.57.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.57.0 port 30752 id 0
+May 27 19:33:23 10.71.57.0 a713744 session opened for local user a713744 from [10.71.57.0]
+May 27 19:34:32 10.71.57.0 a713744 sent status No such file
+May 27 19:34:32 10.71.56.0 a713744 Connection from 10.71.56.0 port 44340 on 82.165.90.153 port 22 rdomain ""
+May 27 19:34:32 10.71.56.0 a713744 Accepted password for a713744 from 10.71.56.0 port 44340 ssh2
+May 27 19:34:32 10.71.56.0 a713744 Connection from 10.71.56.0 port 40474 on 82.165.90.153 port 22 rdomain ""
+May 27 19:34:32 10.71.56.0 a713744 Accepted password for a713744 from 10.71.56.0 port 40474 ssh2
+May 27 19:34:32 10.71.56.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.56.0 port 44340 id 0
+May 27 19:34:32 10.71.56.0 a713744 session opened for local user a713744 from [10.71.56.0]
+May 27 19:34:33 10.71.56.0 a713744 Starting session: subsystem 'sftp' for a713744 from 10.71.56.0 port 40474 id 0
+May 27 19:34:33 10.71.56.0 a713744 session opened for local user a713744 from [10.71.56.0]
+May 27 19:34:33 10.71.56.0 a713744 open "/index.html" flags READ mode 0666
+May 27 19:34:33 10.71.56.0 a713744 open "/logs/access.log.22.2" flags READ mode 0666
+May 27 19:34:33 10.71.56.0 a713744 close "/index.html" bytes read 3660 written 0
+May 27 19:34:33 10.71.56.0 a713744 [10.71.56.0|get|0|3660|0|0|0|2f696e6465782e68746d6c|]
+May 27 19:34:33 10.71.56.0 a713744 open "/logs/access.log.22.1" flags READ mode 0666
+May 27 19:34:34 10.71.56.0 a713744 close "/logs/access.log.22.2" bytes read 441159 written 0
+May 27 19:34:34 10.71.56.0 a713744 [10.71.56.0|get|1|441159|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e32|]
+May 27 19:34:34 10.71.56.0 a713744 close "/logs/access.log.22.1" bytes read 1465 written 0
+May 27 19:34:34 10.71.56.0 a713744 [10.71.56.0|get|1|1465|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e31|]
+May 27 19:34:34 10.71.56.0 a713744 open "/logs/sftp.log" flags READ mode 0666

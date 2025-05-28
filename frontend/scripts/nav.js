@@ -18,7 +18,7 @@ function logout() {
 function cargar_nav() {
   document.getElementById("nav-container").innerHTML = `<nav>
       <img src="../icons/logo.png" alt="Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
-      <a href="index.html">Inicio</a>
+      <a href="../../../">Inicio</a>
       <a href="participante.html" id="nav-participante">Participante</a>
       <a href="admin.html" id="nav-admin">Administración</a>
       <a href="galeria.html">Galería</a>

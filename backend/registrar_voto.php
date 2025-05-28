@@ -23,12 +23,19 @@ if (!$fotoGanadora || !$fotoPerdedora) {
     exit;
 }
 
-// Verifica si ya existe un voto para esta combinación hoy desde esta IP
+// Verifica si ya existe un voto para esta combinación hoy desde esta IP (en cualquier orden)
 $stmt = $pdo->prepare("
     SELECT 1 FROM votos
-    WHERE foto_ganadora_id = ? AND foto_perdedora_id = ? AND ip = ? AND DATE(fecha) = CURDATE()
+    WHERE 
+        (
+            (foto_ganadora_id = ? AND foto_perdedora_id = ?)
+            OR
+            (foto_ganadora_id = ? AND foto_perdedora_id = ?)
+        )
+        AND ip = ?
+        AND DATE(fecha) = CURDATE()
 ");
-$stmt->execute([$fotoGanadora, $fotoPerdedora, $ip]);
+$stmt->execute([$fotoGanadora, $fotoPerdedora, $fotoPerdedora, $fotoGanadora, $ip]);
 if ($stmt->fetch()) {
     echo json_encode(["success" => false, "message" => "Ya has votado este duelo hoy."]);
     exit;
