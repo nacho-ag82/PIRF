@@ -8,18 +8,32 @@ require_once "conexion.php";
 require_once "es_fecha_valida.php";
 
 header('Content-Type: application/json');
+// Obtener la fecha de fin de votación desde la configuración
+$stmt = $pdo->query("SELECT lim_fvoto FROM configuracion LIMIT 1");
+$config = $stmt->fetch(PDO::FETCH_ASSOC);
+$lim_fvoto = $config['lim_fvoto'] ?? null;
 
-if (!estaPermitido('fin_votacion')) {
+if ($lim_fvoto && date('Y-m-d') > $lim_fvoto) {
     echo json_encode(["success" => false, "message" => "El plazo de votación ha terminado."]);
     exit;
 }
 
-$fotoGanadora = $_POST['ganadora'] ?? null;
-$fotoPerdedora = $_POST['perdedora'] ?? null;
+$fotoGanadora = isset($_POST['ganadora']) ? (int)$_POST['ganadora'] : null;
+$fotoPerdedora = isset($_POST['perdedora']) ? (int)$_POST['perdedora'] : null;
 $ip = $_SERVER['REMOTE_ADDR'];
 
-if (!$fotoGanadora || !$fotoPerdedora) {
-    echo json_encode(["success" => false, "message" => "Faltan datos"]);
+if (!$fotoGanadora || !$fotoPerdedora || $fotoGanadora === $fotoPerdedora) {
+    echo json_encode(["success" => false, "message" => "Datos inválidos"]);
+    exit;
+}
+
+// (opcional) Límite de votos diarios por IP
+$maxVotosPorDia = 10;
+$stmt = $pdo->prepare("SELECT COUNT(*) as total FROM votos WHERE ip = ? AND DATE(fecha) = CURDATE()");
+$stmt->execute([$ip]);
+$totalVotosHoy = (int)($stmt->fetch(PDO::FETCH_ASSOC)['total'] ?? 0);
+if ($totalVotosHoy >= $maxVotosPorDia) {
+    echo json_encode(["success" => false, "message" => "Máximo de votos permitidos alcanzado para hoy."]);
     exit;
 }
 
