@@ -65,7 +65,7 @@ async function cargarFotosSubidas() {
       div.innerHTML = `
         <input type="text" value="${foto.titulo}" onchange="editarTitulo(${foto.id}, this.value)" />
         <img src="../../backend/ver_foto.php?id=${foto.id}" width="400" />
-        
+        <button onclick="eliminarFoto(${foto.id})">Eliminar</button>
       `;
       container.appendChild(div);
     });
@@ -84,6 +84,25 @@ async function editarTitulo(id, nuevoTitulo) {
     const data = await res.json();
     if (!data.success) {
       alert(data.message || "Error al actualizar el título.");
+    }
+  } catch (e) {
+    alert("Error de conexión.");
+  }
+}
+
+async function eliminarFoto(id) {
+  if (!confirm("¿Seguro que deseas eliminar esta foto?")) return;
+  try {
+    const res = await fetch("../../backend/eliminar_foto.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `id=${id}`,
+    });
+    const data = await res.json();
+    if (data.success) {
+      cargarFotosSubidas();
+    } else {
+      alert(data.message || "Error al eliminar la foto.");
     }
   } catch (e) {
     alert("Error de conexión.");
